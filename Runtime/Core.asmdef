@@ -2,6 +2,7 @@
   "name": "CursedDepths.Core",
   "rootNamespace": "CursedDepths.Core",
   "references": [],
+  "autoReferenced": true,
   "includePlatforms": [],
   "excludePlatforms": []
 }
