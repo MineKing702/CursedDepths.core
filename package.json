@@ -1,0 +1,10 @@
+{
+  "name": "com.yourname.curseddepths.core",
+  "version": "1.0.0",
+  "displayName": "Cursed Depths Core",
+  "description": "Core gameplay systems for Cursed Depths",
+  "unity": "6000.0",
+  "author": {
+    "name": "Andrew Gountis and Daniel Kaminski"
+  }
+}
