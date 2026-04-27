@@ -4,7 +4,7 @@ namespace CursedDepths.Core.Settings
     {
         // Volume Settings
         public float MasterVolume { get; set; } 
-        public float MusicVolue { get; set; } 
+        public float MusicVolume { get; set; } 
         public float SoundEffects { get; set; } 
     }
 }
