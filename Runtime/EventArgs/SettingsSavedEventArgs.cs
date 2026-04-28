@@ -4,7 +4,7 @@ public class SettingsSavedEventArgs
 {
     public PlayerSettings playerSettings;
 
-    public SettingSavedEventArgs(PlayerSettings playerSettings)
+    public SettingsSavedEventArgs(PlayerSettings playerSettings)
     {
         this.playerSettings = playerSettings;
     }
