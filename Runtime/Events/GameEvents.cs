@@ -8,9 +8,7 @@ namespace CursedDepths.Core.Events
         public static event Action GameStartupRequested;
         public static event Action GameStartupFinished;
         public static event Action OpenSettingsMenu;
-        public static event Action CloseSettingsMenu;
-
-        public static event Action<PlayerSettings> PlayerSettingsLoaded;
+        public static event Action<PlayerSettings> CloseSettingsMenu;
 
         public static void RequestGameStartup()
         {
