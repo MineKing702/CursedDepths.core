@@ -25,9 +25,9 @@ namespace CursedDepths.Core.Events
             OpenSettingsMenu?.Invoke();
         }
 
-        public static void CloseSettings()
+        public static void CloseSettings(PlayerSettings settings)
         {
-            CloseSettingsMenu?.Invoke();
+            CloseSettingsMenu?.Invoke(settings);
         }
     }
 }
