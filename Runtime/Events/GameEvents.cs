@@ -9,8 +9,8 @@ namespace CursedDepths.Core.Events
         public static event Action GameStartupFinished;
         public static event Action OpenSettingsMenu;
         public static event Action<ClosedSettingsMenuEventArgs> ClosedSettingsMenu;
-
         public static event Action<SettingsLoadedEventArgs> SettingsLoaded;
+        public static event Action<SettingsSavedEventArgs> SettingsSaved;
 
         public static void RequestGameStartup()
         {
@@ -35,6 +35,11 @@ namespace CursedDepths.Core.Events
         public static void LoadedSettings(SettingsLoadedEventArgs loadedArgs)
         {
             SettingsLoaded?.Invoke(loadedArgs);
+        }
+
+        public static void SaveSettings(SettingsSavedEventArgs savesArgs)
+        {
+            SettingsSaved?.Invoke(savedArgs);
         }
     }
 }
