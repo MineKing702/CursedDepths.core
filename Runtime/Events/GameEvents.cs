@@ -22,9 +22,14 @@ namespace CursedDepths.Core.Events
             GameStartupFinished?.Invoke();
         }
 
-        public static void LoadPlayerSettings(PlayerSettings settings)
+        public static void OpenSettings()
         {
-            PlayerSettingsLoaded?.Invoke(settings);
+            OpenSettingsMenu?.Invoke();
+        }
+
+        public static void CloseSettings()
+        {
+            CloseSettingsMenu?.Invoke();
         }
     }
 }
