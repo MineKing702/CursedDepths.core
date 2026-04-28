@@ -1,4 +1,4 @@
-using CursedDepths.Core.Settings
+using CursedDepths.Core.Settings;
 
 public class SettingsLoadedEventArgs
 {
