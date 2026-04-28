@@ -29,7 +29,7 @@ namespace CursedDepths.Core.Events
 
         public static void CloseSettingsMenu(ClosedSettingsMenuEventArgs closedArgs)
         {
-            CloseSettingsMenu?.Invoke(closedArgs);
+            ClosedSettingsMenu?.Invoke(closedArgs);
         }
 
         public static void LoadedSettings(SettingsLoadedEventArgs loadedArgs)
