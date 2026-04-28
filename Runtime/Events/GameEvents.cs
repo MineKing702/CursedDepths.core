@@ -37,7 +37,7 @@ namespace CursedDepths.Core.Events
             SettingsLoaded?.Invoke(loadedArgs);
         }
 
-        public static void SaveSettings(SettingsSavedEventArgs savesArgs)
+        public static void SaveSettings(SettingsSavedEventArgs savedArgs)
         {
             SettingsSaved?.Invoke(savedArgs);
         }
