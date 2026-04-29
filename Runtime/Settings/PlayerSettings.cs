@@ -1,3 +1,5 @@
+using UnityEngine;
+
 namespace CursedDepths.Core.Settings
 {
     public class PlayerSettings
