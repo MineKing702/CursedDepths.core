@@ -1,4 +1,5 @@
 using UnityEngine;
+using CursedDepths.Core.Events;
 
 public class Health : MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class Health : MonoBehaviour
 
     public void DealDamage(int toSub)
     {
-        CurrentHp = Mathf.Max(currentHp - toSub, 0);
+        currentHp = Mathf.Max(currentHp - toSub, 0);
 
         if (currentHp <= 0)
         {
