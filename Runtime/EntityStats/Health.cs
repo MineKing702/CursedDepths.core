@@ -21,7 +21,7 @@ public class Health : MonoBehaviour
             EntityDiedEventArgs arg = new EntityDiedEventArgs();
             arg.id = isPlayer ? EntityDiedEventArgs.EntityID.Player : EntityDiedEventArgs.EntityID.Enemy;
             arg.level = 0;
-            GameEvents.EntityDied(isPlayer);
+            GameEvents.EntityDied(arg);
         }
     }
 }
