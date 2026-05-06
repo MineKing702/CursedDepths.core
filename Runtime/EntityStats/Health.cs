@@ -4,6 +4,7 @@ public class Health : MonoBehaviour
 {
     [SerializeField] private int maxHp = 100;
     [SerializeField] private int currentHp = 100;
+    [SerializeField] private bool isPlayer;
 
     public void AddHealth(int amount)
     {
@@ -16,7 +17,7 @@ public class Health : MonoBehaviour
 
         if (currentHp <= 0)
         {
-            GameEvents.PlayerDied();
+            GameEvents.EntityDied(isPlayer);
         }
     }
 }
