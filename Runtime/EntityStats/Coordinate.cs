@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SectionData
+public class Coordinate
 {
     public Vector2 rotation;
     public Vector2 position;
