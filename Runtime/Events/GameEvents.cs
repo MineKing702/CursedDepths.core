@@ -11,6 +11,7 @@ namespace CursedDepths.Core.Events
         public static event Action<ClosedSettingsMenuEventArgs> ClosedSettingsMenu;
         public static event Action<SettingsLoadedEventArgs> SettingsLoaded;
         public static event Action<SettingsSavedEventArgs> SettingsSaved;
+        public static event Action<EntityDiedEventArgs> EntityDies;
 
         public static void RequestGameStartup()
         {
@@ -40,6 +41,11 @@ namespace CursedDepths.Core.Events
         public static void SaveSettings(SettingsSavedEventArgs savedArgs)
         {
             SettingsSaved?.Invoke(savedArgs);
+        }
+
+        public static void EntityDied(EntityDiedEventArgs deadArgs)
+        {
+            EntityDies?.Invoke(deadArgs);
         }
     }
 }
