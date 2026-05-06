@@ -2,7 +2,8 @@ public class EntityDiedEventArgs
 { 
     public enum EntityID
     {
-        Player
+        Player,
+        Enemy
     }
 
     public EntityID id;
