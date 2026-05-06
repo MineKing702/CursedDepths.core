@@ -18,6 +18,9 @@ public class Health : MonoBehaviour
 
         if (currentHp <= 0)
         {
+            EntityDiedEventArgs arg = new EntityDiedEventArgs();
+            arg.id = isPlayer ? EntityDiedEventArgs.EntityID.Player : EntityDiedEventArgs.EntityID.Enemy;
+            arg.level = 0;
             GameEvents.EntityDied(isPlayer);
         }
     }
